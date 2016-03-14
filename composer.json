@@ -1,4 +1,5 @@
 {
+    "name": "marcoazn89/monolog-ignore-strategy",
     "require": {
         "monolog/monolog": "*"
     },
