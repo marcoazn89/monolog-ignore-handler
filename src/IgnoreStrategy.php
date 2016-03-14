@@ -2,15 +2,13 @@
 namespace Marcoazn89;
 
 /**
- * Error level range + ignore activation strategy.
- *
- * Specify a trigger for the logs and pass an array of ignores
- * to log everything from the trigger and above with exception
- * of the ignores.
+ * This class was meant to be used with the \Monolog\Handler\FingersCrossedHandler.
+ * The first parameter specifies when the handler will be activated and the second
+ * one specifies when the handler will not be activated
  *
  * @author Marco A. Chang
  */
-class IgnoreHandler implements \Monolog\Handler\FingersCrossed\ActivationStrategyInterface
+class IgnoreStrategy implements \Monolog\Handler\FingersCrossed\ActivationStrategyInterface
 {
     private $actionLevel;
     private $ignore;
