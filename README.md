@@ -9,7 +9,7 @@ $handler = new \Monolog\Handler\StreamHandler(
   100
 );
 
-// Trigger logging from DEBUG or higuer
+// Trigger logging from DEBUG or higuer but not ALERT
 $logger->pushHandler(new \Monolog\Handler\FingersCrossedHandler(
   $handler,
   new Marcoazn89\IgnoreStrategy(\Monolog\Logger::DEBUG, [\Monolog\Logger::ERROR, \Monolog\Logger::ALERT])
