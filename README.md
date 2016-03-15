@@ -1,4 +1,4 @@
-# monolog-ignore-handler
+# monolog-ignore-strategy
 A monolog activation strategy that ignores log levels within a range
 
 ```php
