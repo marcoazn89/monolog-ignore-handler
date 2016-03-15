@@ -1,5 +1,5 @@
 # monolog-ignore-handler
-A monolog handler that ignores log levels within a range
+A monolog activation strategy that ignores log levels within a range
 
 ```php
 $logger = new \Monolog\Logger('Test');
